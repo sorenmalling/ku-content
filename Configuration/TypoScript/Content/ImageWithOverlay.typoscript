@@ -1,0 +1,13 @@
+tt_content.image_with_overlay =< lib.contentElement
+tt_content.image_with_overlay {
+	templateName = ImageWithOverlay
+	templateRootPaths.10 = EXT:ku_content/Resources/Private/Content/Templates
+	partialRootPaths.10 = EXT:ku_content/Resources/Private/Content/Partials
+
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10 {
+			references.fieldName = image
+		}
+	}
+}

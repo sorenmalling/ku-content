@@ -2,25 +2,6 @@
 
 defined('TYPO3_MODE') or die();
 
-
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', [
-    'tx_content_images' => [
-        'label' => 'Produkter',
-        'config' => [
-            'type' => 'inline',
-            'foreign_table' => 'tx_affiliateproducts_product',
-            'MM' => 'tx_godegaver_products_reference',
-            'appearance' => [
-                'useCombination' => 1,
-                'useSortable' => 1,
-                'collapseAll' => 1,
-                'expandSingle' => 1,
-            ]
-        ]
-    ]
-]);
-
-
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
 	'tt_content',
 	'CType',
